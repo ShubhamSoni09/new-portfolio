@@ -1,0 +1,178 @@
+.education {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.education-card {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.education-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+.education-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  border: 2px solid #0056b3;
+}
+
+.ub-logo, .nirma-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover .ub-logo,
+.education-card:hover .nirma-logo {
+  transform: scale(1.05);
+}
+
+.education-card:hover .education-icon {
+  transform: scale(1.05);
+}
+
+.education-details {
+  flex: 1;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.education-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.meta-item svg {
+  color: #2563eb;
+  font-size: 0.875rem;
+}
+
+.meta-item.gpa {
+  background: #2563eb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.description {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 0;
+  }
+
+  .education-container {
+    padding: 0 1rem;
+  }
+
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .education-meta {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .meta-item {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-card {
+    padding: 1.5rem;
+  }
+
+  .education-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .degree {
+    font-size: 1.125rem;
+  }
+
+  .institution {
+    font-size: 1rem;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

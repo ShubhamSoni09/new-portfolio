@@ -1,0 +1,49 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield background and border -->
+  <path d="M30 0 L55 5 Q58 8 58 12 L58 48 Q58 52 55 55 L30 60 L5 55 Q2 52 2 48 L2 12 Q2 8 5 5 Z" fill="#FFFFFF" stroke="#FFD700" stroke-width="2"/>
+
+  <!-- Quadrants -->
+  <!-- Top-Left (Red) -->
+  <path d="M30 0 L55 5 Q58 8 58 12 L58 30 L30 30 L30 0 Z" fill="#E4002B"/>
+  <!-- Top-Right (Blue) -->
+  <path d="M30 0 L5 5 Q2 8 2 12 L2 30 L30 30 L30 0 Z" fill="#003366"/>
+  <!-- Bottom-Left (Blue) -->
+  <path d="M30 30 L2 30 L2 48 Q2 52 5 55 L30 60 L30 30 Z" fill="#003366"/>
+  <!-- Bottom-Right (Red) -->
+  <path d="M30 30 L58 30 L58 48 Q58 52 55 55 L30 60 L30 30 Z" fill="#E4002B"/>
+
+  <!-- Content for Quadrants -->
+  <!-- Top-Left: Stylized 'n' -->
+  <text x="17" y="22" font-family="serif" font-size="20" font-weight="bold" fill="#003366" transform="scale(1.2, 1) rotate(0, 17, 22)">n</text>
+
+  <!-- Top-Right: Sunburst -->
+  <g transform="translate(15,15)">
+    <circle cx="0" cy="0" r="12" fill="url(#sunGradient)"/>
+    <line x1="0" y1="0" x2="12" y2="12" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="16" y2="8" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="20" y2="4" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="22" y2="0" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="20" y2="-4" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="16" y2="-8" stroke="url(#sunGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="12" y2="-12" stroke="url(#sunGradient)" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom-Left: Open Book -->
+  <g fill="#FFFFFF" transform="translate(15, 35)">
+    <path d="M0 5 L20 0 L20 15 L0 20 Z"/>
+    <path d="M20 0 L40 5 L40 20 L20 15 Z"/>
+    <line x1="20" y1="0" x2="20" y2="15" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="5" y1="6" x2="15" y2="3" stroke="#FFFFFF" stroke-width="0.5"/>
+    <line x1="25" y1="3" x2="35" y2="6" stroke="#FFFFFF" stroke-width="0.5"/>
+  </g>
+
+  <!-- Bottom-Right: Stylized 'u' -->
+  <text x="42" y="52" font-family="serif" font-size="20" font-weight="bold" fill="#003366" transform="scale(1.2, 1) rotate(0, 42, 52)">u</text>
+</svg>

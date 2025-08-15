@@ -1,0 +1,258 @@
+.experience {
+  padding: 4rem 0;
+  background: white;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.experience-content::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2563eb;
+  z-index: 1;
+}
+
+.experience-card {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-left: 60px;
+}
+
+.experience-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: -45px;
+  top: 2rem;
+  width: 16px;
+  height: 16px;
+  background: #2563eb;
+  border-radius: 50%;
+  border: 3px solid #f8fafc;
+  z-index: 2;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-icon {
+  width: 50px;
+  height: 50px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover .experience-icon {
+  transform: scale(1.05);
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.meta-item svg {
+  color: #2563eb;
+  font-size: 0.875rem;
+}
+
+.description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.technologies h5,
+.achievements h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background: white;
+  color: #64748b;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 0;
+  }
+
+  .experience-container {
+    padding: 0 1rem;
+  }
+
+  .experience-content::before {
+    left: 20px;
+  }
+
+  .experience-card {
+    margin-left: 40px;
+  }
+
+  .experience-card::before {
+    left: -30px;
+    top: 1.5rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .experience-meta {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .tech-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    padding: 1.5rem;
+    margin-left: 30px;
+  }
+
+  .experience-card::before {
+    left: -25px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .experience-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .position {
+    font-size: 1.125rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .meta-item {
+    font-size: 0.8rem;
+  }
+}
