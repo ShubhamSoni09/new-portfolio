@@ -49,13 +49,13 @@ const Education = () => {
               <div className="education-icon">
                 {edu.institution.includes('Buffalo') ? (
                   <img 
-                    src="/buffalo-logo.png" 
+                    src={process.env.PUBLIC_URL + '/buffalo-logo.png'} 
                     alt="University at Buffalo Logo" 
                     className="ub-logo"
                   />
                 ) : edu.institution.includes('Nirma') ? (
                   <img 
-                    src="/nirma-logo.png" 
+                    src={process.env.PUBLIC_URL + '/nirma-logo.png'} 
                     alt="Nirma University Logo" 
                     className="nirma-logo"
                   />

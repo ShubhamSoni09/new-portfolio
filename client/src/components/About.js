@@ -6,7 +6,7 @@ import './About.css';
 const About = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Shubham_Soni_Resume.pdf';
+    link.href = process.env.PUBLIC_URL + '/Shubham_Soni_Resume.pdf';
     link.download = 'Shubham_Soni_Resume.pdf';
     document.body.appendChild(link);
     link.click();
